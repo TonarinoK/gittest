@@ -1,0 +1,21 @@
+{
+  "name": "PreventWastingTime",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "時間の無駄遣い防止ソリューション。youtubeを開いて15分経つと、強制的に松岡修造さんのwebサイトの「みんなを本気で元気にする！修造メッセージ」ページに遷移します。",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["hoge.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Shouldn’t you be working？"
+  },
+  "icons":{
+    "16":"icon.png",
+    "48":"icon.png",
+    "128":"icon.png"
+  }
+}
